@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Alexandra Mourato",
+  "classifications": [ "Web", "API", "C#" ],
+  "identity": "MyCustomApiTemplate",
+  "name": "Custom Web API Template",
+  "shortName": "mycustomapi",
+  "sourceName": "WebApiTemplate",
+  "preferNameDirectory": true,
+  "symbols": {
+    "ProjectName": {
+      "type": "parameter",
+      "defaultValue": "WebApiTemplate",
+      "replaces": "WebApiTemplate"
+    }
+  },
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "rename": {
+            "MyCustomApiTemplate": "{ProjectName}"
+          }
+        }
+      ]
+    }
+  ]
+}
